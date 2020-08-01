@@ -14,6 +14,7 @@ counts_path <- paste(base_path, 'sc_atac/atac_v1_pbmc_10k_filtered_peak_bc_matri
 meta_path <- paste(base_path, 'sc_atac/atac_v1_pbmc_10k_singlecell.csv' ,sep = "")
 rna_path <- paste(base_path, 'sc_atac/pbmc_10k_v3.rds' ,sep = "")
 fragment.path <- paste(base_path, 'seurat_data/sc_atac/atac_v1_pbmc_10k_fragments.tsv.gz' ,sep = "")
+source('./r_script/signac_function.R')
 
 counts <- Read10X_h5(filename = counts_path)
 
